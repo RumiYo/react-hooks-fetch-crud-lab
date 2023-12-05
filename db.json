@@ -65,61 +65,6 @@
         "controlled"
       ],
       "correctIndex": 1
-    },
-    {
-      "prompt": "Question1",
-      "answers": [
-        "ans1",
-        "ans2",
-        "ans3",
-        "ans4"
-      ],
-      "correctIndex": 0,
-      "id": 7
-    },
-    {
-      "prompt": "Question1",
-      "answers": [
-        "ans1",
-        "ans2",
-        "ans3",
-        "ans4"
-      ],
-      "correctIndex": "1",
-      "id": 8
-    },
-    {
-      "prompt": "Question3",
-      "answers": [
-        "ans1",
-        "ans2",
-        "ans3",
-        "ans4"
-      ],
-      "correctIndex": "1",
-      "id": 9
-    },
-    {
-      "prompt": "Question4",
-      "answers": [
-        "ans1",
-        "ans2",
-        "ans3",
-        "ans4"
-      ],
-      "correctIndex": "2",
-      "id": 10
-    },
-    {
-      "prompt": "Question5",
-      "answers": [
-        "ans1",
-        "ans2",
-        "ans3",
-        "ans4"
-      ],
-      "correctIndex": "1",
-      "id": 11
     }
   ]
 }

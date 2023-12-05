@@ -19,7 +19,6 @@ function QuestionForm( { addQuestion }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
     const newQuestion = {
       prompt: formData.prompt,
       answers: [formData.answer1, formData.answer2, formData.answer3, formData.answer4],
