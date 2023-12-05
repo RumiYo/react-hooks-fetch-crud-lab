@@ -20,6 +20,12 @@ function QuestionForm(props) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
+    // const newQuestion = {
+    //   propmpt: formData.prompt,
+    //   answers: [formData.answer1, formData.answer2],
+    //   correctIndex: formData.correctIndex,
+    // }
+    // console.log(newQuestion)
   }
 
   return (
