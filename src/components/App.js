@@ -5,7 +5,6 @@ import QuestionList from "./QuestionList";
 
 function App() {
   const [page, setPage] = useState("List");
-
   const [questions, setQuestions] = useState("");
 
   useEffect(() => {
@@ -23,10 +22,22 @@ function App() {
     setQuestions(updatedQuestions);
   }
 
+  function updateQuestions(updatedQuestion){
+    const updatedQuestions = questions.map( question => {
+      if(question.id === updatedQuestion.id){
+        return updatedQuestion;
+      }else{
+        return question;
+      }
+    })
+    setQuestions(updatedQuestions);
+  }
+  console.log(questions)
+
   return (
     <main>
       <AdminNavBar onChangePage={setPage} />
-      {page === "Form" ? <QuestionForm addQuestion={addQuestion} /> : <QuestionList questions={questions} deleteQuestion={deleteQuestion} />}
+      {page === "Form" ? <QuestionForm addQuestion={addQuestion} /> : <QuestionList questions={questions} deleteQuestion={deleteQuestion}  updateQuestions={updateQuestions} />}
     </main>
   );
 }
